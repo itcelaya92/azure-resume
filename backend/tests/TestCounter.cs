@@ -21,10 +21,10 @@ namespace tests
         {
             var counter = new Company.Function.Counter();
             counter.Id = "index";
-            counter.Count = 2;
+            counter.Count = 5;
             var request = TestFactory.CreateHttpRequest();
             var response = (HttpResponseMessage) Company.Function.GetResumeCounter.Run(request, counter, out counter, logger);
-            Assert.Equal(3, counter.Count);
+            Assert.Equal(6, counter.Count);
         }
 
     }
