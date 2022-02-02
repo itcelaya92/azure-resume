@@ -23,7 +23,8 @@ namespace Company.Function
         {   
             //Here is where the counter gets updated.
             log.LogInformation("C# HTTP trigger function processed a request.");
-            //here
+            //here is where the counter gets updated.
+            
             updatedCounter = counter;
             updatedCounter.Count += 1;
 
